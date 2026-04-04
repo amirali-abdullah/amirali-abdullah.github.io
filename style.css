@@ -120,42 +120,31 @@ a:hover {
 
 /* ===== EPIGRAPH BOX ===== */
 .epigraph-box {
-  max-width: 560px;
-  margin: 0 auto 10px;
-  padding: 20px 28px;
-  border: 1px solid #d4c9a8;
-  border-radius: 6px;
-  background: linear-gradient(135deg, #fdfcf8, #f8f5ed);
+  width: 180px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fdfcf9;
   text-align: center;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.epigraph-ornament {
-  color: #b8a97e;
-  font-size: 1.1rem;
-  line-height: 1;
-}
-
-.epigraph {
-  margin: 8px 0;
-  padding: 0;
-  border: none;
-  font-family: "Georgia", "Times New Roman", "Palatino Linotype", serif;
-  font-style: italic;
-  font-size: 0.92rem;
+.epigraph-box p {
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  font-size: 0.55rem;
+  line-height: 1.4;
   color: #4a4238;
-  line-height: 1.6;
-  letter-spacing: 0.01em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
-.epigraph-cite {
-  display: block;
-  margin-bottom: 4px;
-  font-family: "Georgia", "Times New Roman", serif;
-  font-size: 0.8rem;
-  font-style: normal;
+.epigraph-box .epigraph-cite {
+  margin-top: 4px;
+  font-family: "Dancing Script", cursive;
+  font-size: 0.5rem;
   color: #8a7d6b;
-  letter-spacing: 0.02em;
 }
 
 .social-row {
