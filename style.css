@@ -92,6 +92,9 @@ a:hover {
   align-items: center;
   gap: 12px;
   flex-shrink: 0;
+  width: 180px;
+  max-width: 180px;
+  overflow: hidden;
 }
 
 .hero-photo img {
@@ -120,8 +123,9 @@ a:hover {
 
 /* ===== EPIGRAPH BOX ===== */
 .epigraph-box {
-  width: 180px;
-  padding: 10px 12px;
+  width: 100%;
+  max-width: 180px;
+  padding: 8px 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
   background: #fdfcf9;
