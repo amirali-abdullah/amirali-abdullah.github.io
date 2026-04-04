@@ -118,6 +118,24 @@ a:hover {
   font-weight: 700;
 }
 
+.epigraph {
+  margin: 4px 0 14px;
+  padding: 0;
+  border: none;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+.epigraph cite {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.82rem;
+  font-style: normal;
+  color: #999;
+}
+
 .social-row {
   display: flex;
   gap: 16px;
