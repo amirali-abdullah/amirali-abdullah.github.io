@@ -28,8 +28,13 @@
 <header class="hero">
   <div class="hero-inner">
 
-    <div class="hero-photo">
-      <img src="assets/kumbaya.png" alt="Amirali Abdullah">
+    <div class="hero-left">
+      <div class="hero-photo">
+        <img src="assets/kumbaya.png" alt="Amirali Abdullah">
+      </div>
+      <div class="graph-container">
+        <canvas id="nodeGraph" width="180" height="180"></canvas>
+      </div>
     </div>
 
     <div class="hero-text">
@@ -72,13 +77,15 @@
 <!-- ===== NEWS ===== -->
 <section id="news" class="section">
   <h2>News</h2>
-  <ul class="news-list">
-    <li><span class="news-date">2026</span> Paper on steering vector geometry submitted to ICML.</li>
-    <li><span class="news-date">2026</span> "Beyond I'm Sorry, I Can't" accepted at AAAI 2026.</li>
-    <li><span class="news-date">2025</span> Two papers accepted at EMNLP 2025 (one Findings).</li>
-    <li><span class="news-date">2025</span> "Activation Space Interventions Can Be Transferred Between LLMs" accepted at ICML 2025.</li>
-    <li><span class="news-date">2024</span> "Interpreting Learned Feedback Patterns in LLMs" accepted at NeurIPS 2024.</li>
-  </ul>
+  <div class="news-box">
+    <ul class="news-list">
+      <li><span class="news-date">2026</span> Paper on steering vector geometry submitted to ICML.</li>
+      <li><span class="news-date">2026</span> "Beyond I'm Sorry, I Can't" accepted at AAAI 2026.</li>
+      <li><span class="news-date">2025</span> Two papers accepted at EMNLP 2025 (one Findings).</li>
+      <li><span class="news-date">2025</span> "Activation Space Interventions Can Be Transferred Between LLMs" accepted at ICML 2025.</li>
+      <li><span class="news-date">2024</span> "Interpreting Learned Feedback Patterns in LLMs" accepted at NeurIPS 2024.</li>
+    </ul>
+  </div>
 </section>
 
 <!-- ===== ABOUT ===== -->
@@ -121,152 +128,191 @@
   <!-- 2026 -->
   <div class="pub-year">2026</div>
 
-  <div class="pub">
-    <div class="pub-title">
-      <a href="https://arxiv.org/abs/2602.02224">Spectral Superposition: A Theory of Feature Geometry</a>
-    </div>
-    <div class="pub-authors">
-      Georgi Ivanov, Narmeen Oozeer, Shivam Raval, Tasana Pejovic, Shriyash Upadhyay, <strong>Amir Abdullah</strong>
-    </div>
-    <div class="pub-venue">ICML 2026 (Under Review)</div>
-    <div class="pub-links">
-      <a href="https://arxiv.org/abs/2602.02224">arXiv</a>
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        <a href="https://arxiv.org/abs/2602.02224">Spectral Superposition: A Theory of Feature Geometry</a>
+      </div>
+      <div class="pub-venue-badge">ICML 2026 (Under Review)</div>
+      <div class="pub-authors">
+        Georgi Ivanov, Narmeen Oozeer, Shivam Raval, Tasana Pejovic, Shriyash Upadhyay, <strong>Amir Abdullah</strong>
+      </div>
+      <div class="pub-meta">2026</div>
+      <div class="pub-actions">
+        <a href="https://arxiv.org/abs/2602.02224" class="btn-action">ARXIV</a>
+      </div>
     </div>
   </div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Beyond I'm Sorry, I Can't: Dissecting Large-Language-Model Refusal
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Beyond I'm Sorry, I Can't: Dissecting Large-Language-Model Refusal
+      </div>
+      <div class="pub-venue-badge">AAAI 2026</div>
+      <div class="pub-authors">
+        Nirmalendu Prakash, Wei Jie Yeo, <strong>Amir Abdullah</strong>, Ranjan Satapathy, Erik Cambria, Roy Ka-Wei Lee
+      </div>
+      <div class="pub-meta">2026</div>
     </div>
-    <div class="pub-authors">
-      Nirmalendu Prakash, Wei Jie Yeo, <strong>Amir Abdullah</strong>, Ranjan Satapathy, Erik Cambria, Roy Ka-Wei Lee
-    </div>
-    <div class="pub-venue">AAAI 2026</div>
   </div>
 
   <!-- 2025 -->
   <div class="pub-year">2025</div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Beyond Linear Steering: Unified Multi-Attribute Control for Language Models
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Beyond Linear Steering: Unified Multi-Attribute Control for Language Models
+      </div>
+      <div class="pub-venue-badge">EMNLP 2025 (Findings)</div>
+      <div class="pub-authors">
+        Narmeen Oozeer, Luke Marks, Fazl Barez, <strong>Amir Abdullah</strong>
+      </div>
+      <div class="pub-meta">2025</div>
     </div>
-    <div class="pub-authors">
-      Narmeen Oozeer, Luke Marks, Fazl Barez, <strong>Amir Abdullah</strong>
-    </div>
-    <div class="pub-venue">EMNLP 2025 (Findings)</div>
   </div>
 
-  <div class="pub">
-    <div class="pub-title">
-      TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research
+      </div>
+      <div class="pub-venue-badge">EMNLP 2025</div>
+      <div class="pub-authors">
+        Abir Harrasse, Philip Quirke, Clement Neo, Dhruv Nathawani, Luke Marks, <strong>Amir Abdullah</strong>
+      </div>
+      <div class="pub-meta">2025</div>
     </div>
-    <div class="pub-authors">
-      Abir Harrasse, Philip Quirke, Clement Neo, Dhruv Nathawani, Luke Marks, <strong>Amir Abdullah</strong>
-    </div>
-    <div class="pub-venue">EMNLP 2025</div>
   </div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Activation Space Interventions Can Be Transferred Between Large Language Models
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Activation Space Interventions Can Be Transferred Between Large Language Models
+      </div>
+      <div class="pub-venue-badge">ICML 2025</div>
+      <div class="pub-authors">
+        Narmeen Oozeer, Dhruv Nathawani, Nirmalendu Prakash, Michael Lan, Abir Harrasse, <strong>Amir Abdullah</strong>
+      </div>
+      <div class="pub-meta">2025</div>
     </div>
-    <div class="pub-authors">
-      Narmeen Oozeer, Dhruv Nathawani, Nirmalendu Prakash, Michael Lan, Abir Harrasse, <strong>Amir Abdullah</strong>
-    </div>
-    <div class="pub-venue">ICML 2025</div>
   </div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Sycophancy as Compositions of Atomic Psychometric Traits
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Sycophancy as Compositions of Atomic Psychometric Traits
+      </div>
+      <div class="pub-venue-badge">Preprint</div>
+      <div class="pub-authors">
+        Shreyans Jain, Alexandra Yost, <strong>Amirali Abdullah</strong>
+      </div>
+      <div class="pub-meta">2025</div>
     </div>
-    <div class="pub-authors">
-      Shreyans Jain, Alexandra Yost, <strong>Amirali Abdullah</strong>
-    </div>
-    <div class="pub-venue">Preprint</div>
   </div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Distribution-Aware Feature Selection for SAEs
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Distribution-Aware Feature Selection for SAEs
+      </div>
+      <div class="pub-venue-badge">Preprint</div>
+      <div class="pub-authors">
+        Narmeen Oozeer, Nirmalendu Prakash, Michael Lan, Alice Rigg, <strong>Amirali Abdullah</strong>
+      </div>
+      <div class="pub-meta">2025</div>
     </div>
-    <div class="pub-authors">
-      Narmeen Oozeer, Nirmalendu Prakash, Michael Lan, Alice Rigg, <strong>Amirali Abdullah</strong>
-    </div>
-    <div class="pub-venue">Preprint</div>
   </div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Beyond Monoliths: Expert Orchestration for More Capable, Democratic, and Safe Large Language Models
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Beyond Monoliths: Expert Orchestration for More Capable, Democratic, and Safe Large Language Models
+      </div>
+      <div class="pub-venue-badge">Preprint</div>
+      <div class="pub-authors">
+        Philip Quirke, Narmeen Oozeer, Chaithanya Bandi, <strong>Amir Abdullah</strong>, Jason Hoelscher-Obermaier, Jeff M. Phillips, Joshua Greaves, Clement Neo, Fazl Barez, Shriyash Upadhyay
+      </div>
+      <div class="pub-meta">2025</div>
     </div>
-    <div class="pub-authors">
-      Philip Quirke, Narmeen Oozeer, Chaithanya Bandi, <strong>Amir Abdullah</strong>, Jason Hoelscher-Obermaier, Jeff M. Phillips, Joshua Greaves, Clement Neo, Fazl Barez, Shriyash Upadhyay
-    </div>
-    <div class="pub-venue">Preprint</div>
   </div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Measure what Matters: Psychometric Evaluation of AI with Situational Judgment Tests
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Measure what Matters: Psychometric Evaluation of AI with Situational Judgment Tests
+      </div>
+      <div class="pub-venue-badge">Preprint</div>
+      <div class="pub-authors">
+        Alexandra Yost, Shreyans Jain, Shivam Raval, Grant Corser, Allen Roush, Nina Xu, Jacqueline Hammack, Ravid Shwartz-Ziv, <strong>Amirali Abdullah</strong>
+      </div>
+      <div class="pub-meta">2025</div>
     </div>
-    <div class="pub-authors">
-      Alexandra Yost, Shreyans Jain, Shivam Raval, Grant Corser, Allen Roush, Nina Xu, Jacqueline Hammack, Ravid Shwartz-Ziv, <strong>Amirali Abdullah</strong>
-    </div>
-    <div class="pub-venue">Preprint</div>
   </div>
 
   <!-- 2024 -->
   <div class="pub-year">2024</div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Interpreting Learned Feedback Patterns in Large Language Models
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Interpreting Learned Feedback Patterns in Large Language Models
+      </div>
+      <div class="pub-venue-badge">NeurIPS 2024</div>
+      <div class="pub-authors">
+        Luke Marks, <strong>Amir Abdullah</strong>, Clement Neo, Rauno Arike, David Krueger, Philip Torr, Fazl Barez
+      </div>
+      <div class="pub-meta">2024</div>
     </div>
-    <div class="pub-authors">
-      Luke Marks, <strong>Amir Abdullah</strong>, Clement Neo, Rauno Arike, David Krueger, Philip Torr, Fazl Barez
-    </div>
-    <div class="pub-venue">NeurIPS 2024</div>
   </div>
 
   <!-- 2023 -->
   <div class="pub-year">2023</div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Interpreting Reward Models in RLHF-Tuned Language Models Using Sparse Autoencoders
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Interpreting Reward Models in RLHF-Tuned Language Models Using Sparse Autoencoders
+      </div>
+      <div class="pub-venue-badge">ATTRIB @ NeurIPS 2023</div>
+      <div class="pub-authors">
+        Luke Marks, <strong>Amir Abdullah</strong>, Luna Mendez, Rauno Arike, Philip Torr, Fazl Barez
+      </div>
+      <div class="pub-meta">2023</div>
     </div>
-    <div class="pub-authors">
-      Luke Marks, <strong>Amir Abdullah</strong>, Luna Mendez, Rauno Arike, Philip Torr, Fazl Barez
-    </div>
-    <div class="pub-venue">ATTRIB Workshop @ NeurIPS 2023</div>
   </div>
 
   <!-- Earlier work -->
   <div class="pub-year">Earlier Work (Theoretical CS)</div>
 
-  <div class="pub">
-    <div class="pub-title">
-      A Directed Isoperimetric Inequality with Application to Bregman Near Neighbor Lower Bounds
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        A Directed Isoperimetric Inequality with Application to Bregman Near Neighbor Lower Bounds
+      </div>
+      <div class="pub-venue-badge">STOC 2015</div>
+      <div class="pub-authors">
+        <strong>Amirali Abdullah</strong>, Suresh Venkatasubramanian
+      </div>
+      <div class="pub-meta">2015</div>
     </div>
-    <div class="pub-authors">
-      <strong>Amirali Abdullah</strong>, Suresh Venkatasubramanian
-    </div>
-    <div class="pub-venue">STOC 2015</div>
   </div>
 
-  <div class="pub">
-    <div class="pub-title">
-      Spectral Approaches to Nearest Neighbor Search
+  <div class="pub-card">
+    <div class="pub-body">
+      <div class="pub-title">
+        Spectral Approaches to Nearest Neighbor Search
+      </div>
+      <div class="pub-venue-badge">FOCS 2014</div>
+      <div class="pub-authors">
+        <strong>Amirali Abdullah</strong>, Alexandr Andoni, Ravindran Kannan, Robert Krauthgamer
+      </div>
+      <div class="pub-meta">2014</div>
     </div>
-    <div class="pub-authors">
-      <strong>Amirali Abdullah</strong>, Alexandr Andoni, Ravindran Kannan, Robert Krauthgamer
-    </div>
-    <div class="pub-venue">FOCS 2014</div>
   </div>
 
-  <div class="pub pub-more">
+  <div class="pub-more">
     <em>+ additional publications at AISTATS 2016, SoCG 2013, ISAAC 2016, and IJCGA 2013.
     See <a href="https://scholar.google.com/citations?hl=en&user=jPEbq5wAAAAJ">Google Scholar</a> for full list.</em>
   </div>
@@ -305,8 +351,9 @@
   &copy; 2026 Amirali Abdullah
 </footer>
 
-<!-- ===== SCROLL HIGHLIGHT ===== -->
+<!-- ===== SCRIPTS ===== -->
 <script>
+// Scroll-aware nav highlighting
 (function() {
   var sections = document.querySelectorAll('.section[id]');
   var navLinks = document.querySelectorAll('.nav-right a');
@@ -324,6 +371,68 @@
 
   window.addEventListener('scroll', onScroll);
   onScroll();
+})();
+
+// Animated node graph — representation geometry motif
+(function() {
+  var canvas = document.getElementById('nodeGraph');
+  if (!canvas) return;
+  var ctx = canvas.getContext('2d');
+  var W = canvas.width, H = canvas.height;
+  var nodes = [];
+  var N = 12;
+  var CONNECT_DIST = 70;
+
+  for (var i = 0; i < N; i++) {
+    nodes.push({
+      x: Math.random() * W,
+      y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.4,
+      vy: (Math.random() - 0.5) * 0.4,
+      r: 2.5 + Math.random() * 2
+    });
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, W, H);
+
+    // edges
+    for (var i = 0; i < N; i++) {
+      for (var j = i + 1; j < N; j++) {
+        var dx = nodes[i].x - nodes[j].x;
+        var dy = nodes[i].y - nodes[j].y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < CONNECT_DIST) {
+          var alpha = 1 - dist / CONNECT_DIST;
+          ctx.strokeStyle = 'rgba(0,118,223,' + (alpha * 0.35) + ')';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(nodes[i].x, nodes[i].y);
+          ctx.lineTo(nodes[j].x, nodes[j].y);
+          ctx.stroke();
+        }
+      }
+    }
+
+    // nodes
+    for (var i = 0; i < N; i++) {
+      var n = nodes[i];
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
+      ctx.fillStyle = 'rgba(0,118,223,0.6)';
+      ctx.fill();
+
+      // move
+      n.x += n.vx;
+      n.y += n.vy;
+      if (n.x < 0 || n.x > W) n.vx *= -1;
+      if (n.y < 0 || n.y > H) n.vy *= -1;
+    }
+
+    requestAnimationFrame(draw);
+  }
+
+  draw();
 })();
 </script>
 
