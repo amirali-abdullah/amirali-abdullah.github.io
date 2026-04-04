@@ -10,9 +10,10 @@
 <body>
 
 <!-- ===== NAVBAR ===== -->
-<nav class="nav">
+<nav class="nav" id="navbar">
   <div class="nav-inner">
     <div class="nav-left">Amirali Abdullah</div>
+    <button class="nav-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-right').classList.toggle('open')">&#9776;</button>
     <div class="nav-right">
       <a href="#about">About</a>
       <a href="#news">News</a>
@@ -27,74 +28,247 @@
 <header class="hero">
   <div class="hero-inner">
 
+    <div class="hero-photo">
+      <img src="assets/kumbaya.png" alt="Amirali Abdullah">
+    </div>
+
     <div class="hero-text">
       <h1>Amirali Abdullah</h1>
+
+      <div class="social-row">
+        <a href="mailto:amir.abdullah@thoughtworks.com" title="Email">Email</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=jPEbq5wAAAAJ" title="Google Scholar">Scholar</a>
+        <a href="https://www.linkedin.com/in/amirali-a-23273314/" title="LinkedIn">LinkedIn</a>
+      </div>
+
       <p class="subtitle">
-        AI Researcher · Mechanistic Interpretability · Representation Geometry
+        AI Researcher &middot; Mechanistic Interpretability &middot; Representation Geometry
       </p>
 
       <p>
-        Researching interpretability, steering, and representation structure in
-        large language and multimodal models.
+        I am an AI researcher at <a href="https://www.thoughtworks.com/">Thoughtworks</a>
+        focused on mechanistic interpretability, activation steering, and
+        representation geometry in foundation models. My work explores how
+        internal model structure can be understood, measured, and leveraged
+        for safer and more controllable AI systems.
       </p>
 
-      <div class="hero-links">
-        <a href="https://scholar.google.com/citations?hl=en&user=jPEbq5wAAAAJ">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/amirali-a-23273314/">LinkedIn</a>
-        <a href="#">CV</a>
-        <a href="#">Email</a>
-      </div>
-    </div>
+      <p>
+        I collaborate across academia and industry on interpretability tooling,
+        psychometric evaluation of LLMs, and multimodal representation analysis.
+        Previously, I worked in theoretical computer science on nearest neighbor
+        search, dimensionality reduction, and information-theoretic geometry.
+      </p>
 
-    <div class="hero-photo">
-      <img src="assets/kumbaya.png" alt="Profile Photo">
+      <p class="affiliations">
+        Affiliations:
+        <a href="https://www.thoughtworks.com/">Thoughtworks</a>
+      </p>
     </div>
 
   </div>
 </header>
 
-<!-- ===== ABOUT ===== -->
-<section id="about" class="section">
-  <h2>About</h2>
-
-  <p>
-    I am an AI researcher focused on mechanistic interpretability, steering
-    methods, and representation geometry in foundation models. My work explores
-    how internal model structure relates to steering and interpretability.
-  </p>
-
-  <p>
-    I collaborate across academia and industry on interpretability tooling,
-    psychometric evaluation of LLMs, and multimodal representation analysis.
-  </p>
-</section>
-
 <!-- ===== NEWS ===== -->
 <section id="news" class="section">
   <h2>News</h2>
-
   <ul class="news-list">
-    <li><b>2026</b> — Paper submitted to ICML on steering vector geometry.</li>
+    <li><span class="news-date">2026</span> Paper on steering vector geometry submitted to ICML.</li>
+    <li><span class="news-date">2026</span> "Beyond I'm Sorry, I Can't" accepted at AAAI 2026.</li>
+    <li><span class="news-date">2025</span> Two papers accepted at EMNLP 2025 (one Findings).</li>
+    <li><span class="news-date">2025</span> "Activation Space Interventions Can Be Transferred Between LLMs" accepted at ICML 2025.</li>
+    <li><span class="news-date">2024</span> "Interpreting Learned Feedback Patterns in LLMs" accepted at NeurIPS 2024.</li>
   </ul>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+  <h2>Research</h2>
+
+  <div class="research-area">
+    <h3>Mechanistic Interpretability</h3>
+    <p>
+      Understanding the internal computations of large language models through
+      sparse autoencoders, feature geometry, and circuit-level analysis.
+    </p>
+  </div>
+
+  <div class="research-area">
+    <h3>Activation Steering &amp; Control</h3>
+    <p>
+      Developing methods to steer and control model behavior through
+      representation-space interventions, including multi-attribute and
+      cross-model transfer of steering vectors.
+    </p>
+  </div>
+
+  <div class="research-area">
+    <h3>Psychometric Evaluation of LLMs</h3>
+    <p>
+      Applying psychometric methods to rigorously evaluate personality-like
+      traits, sycophancy, and refusal behavior in language models.
+    </p>
+  </div>
 </section>
 
 <!-- ===== PUBLICATIONS ===== -->
 <section id="publications" class="section">
   <h2>Publications</h2>
+  <p class="pub-note">
+    Full list on <a href="https://scholar.google.com/citations?hl=en&user=jPEbq5wAAAAJ">Google Scholar</a>.
+  </p>
+
+  <!-- 2026 -->
+  <div class="pub-year">2026</div>
 
   <div class="pub">
     <div class="pub-title">
-      Spectral Superposition: A Theory of Feature Geometry
+      <a href="https://arxiv.org/abs/2602.02224">Spectral Superposition: A Theory of Feature Geometry</a>
     </div>
     <div class="pub-authors">
-      Georgi Ivanov, Narmeen Oozeer, Shivam Raval, Tasana Pejovic, Shriyash Upadhyay, Amir Abdullah
+      Georgi Ivanov, Narmeen Oozeer, Shivam Raval, Tasana Pejovic, Shriyash Upadhyay, <strong>Amir Abdullah</strong>
     </div>
-    <div class="pub-venue">
-      ICML 2026 (Under Review)
-    </div>
+    <div class="pub-venue">ICML 2026 (Under Review)</div>
     <div class="pub-links">
-      <a href="https://arxiv.org/abs/2602.02224">Paper</a>
+      <a href="https://arxiv.org/abs/2602.02224">arXiv</a>
     </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Beyond I'm Sorry, I Can't: Dissecting Large-Language-Model Refusal
+    </div>
+    <div class="pub-authors">
+      Nirmalendu Prakash, Wei Jie Yeo, <strong>Amir Abdullah</strong>, Ranjan Satapathy, Erik Cambria, Roy Ka-Wei Lee
+    </div>
+    <div class="pub-venue">AAAI 2026</div>
+  </div>
+
+  <!-- 2025 -->
+  <div class="pub-year">2025</div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Beyond Linear Steering: Unified Multi-Attribute Control for Language Models
+    </div>
+    <div class="pub-authors">
+      Narmeen Oozeer, Luke Marks, Fazl Barez, <strong>Amir Abdullah</strong>
+    </div>
+    <div class="pub-venue">EMNLP 2025 (Findings)</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
+      TinySQL: A Progressive Text-to-SQL Dataset for Mechanistic Interpretability Research
+    </div>
+    <div class="pub-authors">
+      Abir Harrasse, Philip Quirke, Clement Neo, Dhruv Nathawani, Luke Marks, <strong>Amir Abdullah</strong>
+    </div>
+    <div class="pub-venue">EMNLP 2025</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Activation Space Interventions Can Be Transferred Between Large Language Models
+    </div>
+    <div class="pub-authors">
+      Narmeen Oozeer, Dhruv Nathawani, Nirmalendu Prakash, Michael Lan, Abir Harrasse, <strong>Amir Abdullah</strong>
+    </div>
+    <div class="pub-venue">ICML 2025</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Sycophancy as Compositions of Atomic Psychometric Traits
+    </div>
+    <div class="pub-authors">
+      Shreyans Jain, Alexandra Yost, <strong>Amirali Abdullah</strong>
+    </div>
+    <div class="pub-venue">Preprint</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Distribution-Aware Feature Selection for SAEs
+    </div>
+    <div class="pub-authors">
+      Narmeen Oozeer, Nirmalendu Prakash, Michael Lan, Alice Rigg, <strong>Amirali Abdullah</strong>
+    </div>
+    <div class="pub-venue">Preprint</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Beyond Monoliths: Expert Orchestration for More Capable, Democratic, and Safe Large Language Models
+    </div>
+    <div class="pub-authors">
+      Philip Quirke, Narmeen Oozeer, Chaithanya Bandi, <strong>Amir Abdullah</strong>, Jason Hoelscher-Obermaier, Jeff M. Phillips, Joshua Greaves, Clement Neo, Fazl Barez, Shriyash Upadhyay
+    </div>
+    <div class="pub-venue">Preprint</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Measure what Matters: Psychometric Evaluation of AI with Situational Judgment Tests
+    </div>
+    <div class="pub-authors">
+      Alexandra Yost, Shreyans Jain, Shivam Raval, Grant Corser, Allen Roush, Nina Xu, Jacqueline Hammack, Ravid Shwartz-Ziv, <strong>Amirali Abdullah</strong>
+    </div>
+    <div class="pub-venue">Preprint</div>
+  </div>
+
+  <!-- 2024 -->
+  <div class="pub-year">2024</div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Interpreting Learned Feedback Patterns in Large Language Models
+    </div>
+    <div class="pub-authors">
+      Luke Marks, <strong>Amir Abdullah</strong>, Clement Neo, Rauno Arike, David Krueger, Philip Torr, Fazl Barez
+    </div>
+    <div class="pub-venue">NeurIPS 2024</div>
+  </div>
+
+  <!-- 2023 -->
+  <div class="pub-year">2023</div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Interpreting Reward Models in RLHF-Tuned Language Models Using Sparse Autoencoders
+    </div>
+    <div class="pub-authors">
+      Luke Marks, <strong>Amir Abdullah</strong>, Luna Mendez, Rauno Arike, Philip Torr, Fazl Barez
+    </div>
+    <div class="pub-venue">ATTRIB Workshop @ NeurIPS 2023</div>
+  </div>
+
+  <!-- Earlier work -->
+  <div class="pub-year">Earlier Work (Theoretical CS)</div>
+
+  <div class="pub">
+    <div class="pub-title">
+      A Directed Isoperimetric Inequality with Application to Bregman Near Neighbor Lower Bounds
+    </div>
+    <div class="pub-authors">
+      <strong>Amirali Abdullah</strong>, Suresh Venkatasubramanian
+    </div>
+    <div class="pub-venue">STOC 2015</div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-title">
+      Spectral Approaches to Nearest Neighbor Search
+    </div>
+    <div class="pub-authors">
+      <strong>Amirali Abdullah</strong>, Alexandr Andoni, Ravindran Kannan, Robert Krauthgamer
+    </div>
+    <div class="pub-venue">FOCS 2014</div>
+  </div>
+
+  <div class="pub pub-more">
+    <em>+ additional publications at AISTATS 2016, SoCG 2013, ISAAC 2016, and IJCGA 2013.
+    See <a href="https://scholar.google.com/citations?hl=en&user=jPEbq5wAAAAJ">Google Scholar</a> for full list.</em>
   </div>
 
 </section>
@@ -118,23 +292,40 @@
       representations.
     </p>
   </div>
-
 </section>
-
-
 
 <!-- ===== CONTACT ===== -->
 <section id="contact" class="section">
   <h2>Contact</h2>
-
   <p>Email: amir.abdullah@thoughtworks.com</p>
   <p>Location: Utah, USA</p>
 </section>
 
 <footer class="footer">
-  © 2026 Amirali Abdullah
+  &copy; 2026 Amirali Abdullah
 </footer>
+
+<!-- ===== SCROLL HIGHLIGHT ===== -->
+<script>
+(function() {
+  var sections = document.querySelectorAll('.section[id]');
+  var navLinks = document.querySelectorAll('.nav-right a');
+
+  function onScroll() {
+    var scrollPos = window.scrollY + 80;
+    sections.forEach(function(sec) {
+      if (sec.offsetTop <= scrollPos && sec.offsetTop + sec.offsetHeight > scrollPos) {
+        navLinks.forEach(function(a) {
+          a.classList.toggle('active', a.getAttribute('href') === '#' + sec.id);
+        });
+      }
+    });
+  }
+
+  window.addEventListener('scroll', onScroll);
+  onScroll();
+})();
+</script>
 
 </body>
 </html>
-
