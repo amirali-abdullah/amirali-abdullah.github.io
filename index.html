@@ -566,8 +566,8 @@
   function draw() {
     ctx.clearRect(0, 0, W, H);
 
-    // border glows
-    drawGlows();
+    // border glows (disabled — cleaner without)
+    // drawGlows();
 
     // edges
     for (var i = 0; i < N; i++) {
@@ -598,10 +598,10 @@
       // move
       n.x += n.vx;
       n.y += n.vy;
-      if (n.x <= 0) { n.x = 0; n.vx *= -1; addGlow('left', n.y, n.color); }
-      if (n.x >= W) { n.x = W; n.vx *= -1; addGlow('right', n.y, n.color); }
-      if (n.y <= 0) { n.y = 0; n.vy *= -1; addGlow('top', n.x, n.color); }
-      if (n.y >= H) { n.y = H; n.vy *= -1; addGlow('bottom', n.x, n.color); }
+      if (n.x <= 0) { n.x = 0; n.vx *= -1; }
+      if (n.x >= W) { n.x = W; n.vx *= -1; }
+      if (n.y <= 0) { n.y = 0; n.vy *= -1; }
+      if (n.y >= H) { n.y = H; n.vy *= -1; }
     }
 
     requestAnimationFrame(draw);
