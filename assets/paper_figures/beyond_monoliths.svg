@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f8f9fa"/>
+  <!-- Grid of expert nodes -->
+  <rect x="35" y="35" width="28" height="28" rx="5" fill="#0076df" opacity="0.6"/>
+  <rect x="73" y="35" width="28" height="28" rx="5" fill="#6f42c1" opacity="0.6"/>
+  <rect x="111" y="35" width="28" height="28" rx="5" fill="#20c997" opacity="0.6"/>
+  <rect x="35" y="73" width="28" height="28" rx="5" fill="#e67e22" opacity="0.5"/>
+  <rect x="73" y="73" width="28" height="28" rx="5" fill="#0076df" opacity="0.5"/>
+  <rect x="111" y="73" width="28" height="28" rx="5" fill="#6f42c1" opacity="0.5"/>
+  <rect x="35" y="111" width="28" height="28" rx="5" fill="#20c997" opacity="0.5"/>
+  <rect x="73" y="111" width="28" height="28" rx="5" fill="#868e96" opacity="0.5"/>
+  <rect x="111" y="111" width="28" height="28" rx="5" fill="#0076df" opacity="0.6"/>
+  <!-- Orchestrator circle -->
+  <circle cx="160" cy="100" r="18" fill="none" stroke="#0076df" stroke-width="2" opacity="0.7"/>
+  <circle cx="160" cy="100" r="4" fill="#0076df" opacity="0.6"/>
+  <!-- Connection lines from some experts to orchestrator -->
+  <line x1="139" y1="49" x2="145" y2="88" stroke="#adb5bd" stroke-width="1" opacity="0.4"/>
+  <line x1="139" y1="87" x2="142" y2="97" stroke="#adb5bd" stroke-width="1" opacity="0.5"/>
+  <line x1="139" y1="125" x2="145" y2="112" stroke="#adb5bd" stroke-width="1" opacity="0.4"/>
+  <line x1="101" y1="87" x2="142" y2="97" stroke="#adb5bd" stroke-width="1" opacity="0.3"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f8f9fa"/>
+  <!-- Overlapping circles representing composition of traits -->
+  <circle cx="85" cy="85" r="40" fill="#0076df" opacity="0.15" stroke="#0076df" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="115" cy="85" r="40" fill="#6f42c1" opacity="0.15" stroke="#6f42c1" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="100" cy="115" r="40" fill="#20c997" opacity="0.15" stroke="#20c997" stroke-width="1.5" opacity="0.4"/>
+  <!-- Small trait dots within the overlapping region -->
+  <circle cx="100" cy="95" r="3" fill="#0076df" opacity="0.7"/>
+  <circle cx="95" cy="102" r="2.5" fill="#6f42c1" opacity="0.6"/>
+  <circle cx="105" cy="102" r="2.5" fill="#20c997" opacity="0.6"/>
+  <circle cx="100" cy="108" r="2" fill="#868e96" opacity="0.5"/>
+  <!-- Outer ring suggesting the composed whole -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#adb5bd" stroke-width="1" stroke-dasharray="4,4" opacity="0.5"/>
+</svg>

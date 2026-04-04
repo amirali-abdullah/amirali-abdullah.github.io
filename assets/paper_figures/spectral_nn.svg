@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f8f9fa"/>
+  <!-- Concentric rings - spectral decomposition -->
+  <circle cx="100" cy="100" r="70" fill="none" stroke="#0076df" stroke-width="1.5" opacity="0.2"/>
+  <circle cx="100" cy="100" r="55" fill="none" stroke="#0076df" stroke-width="1.5" opacity="0.3"/>
+  <circle cx="100" cy="100" r="40" fill="none" stroke="#6f42c1" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="100" cy="100" r="25" fill="none" stroke="#6f42c1" stroke-width="2" opacity="0.5"/>
+  <circle cx="100" cy="100" r="10" fill="#0076df" opacity="0.3"/>
+  <!-- Data points scattered at various radii (nearest neighbors) -->
+  <circle cx="100" cy="30" r="3" fill="#0076df" opacity="0.5"/>
+  <circle cx="145" cy="50" r="3" fill="#0076df" opacity="0.5"/>
+  <circle cx="165" cy="95" r="3" fill="#0076df" opacity="0.4"/>
+  <circle cx="140" cy="140" r="3" fill="#0076df" opacity="0.5"/>
+  <circle cx="100" cy="165" r="3" fill="#0076df" opacity="0.4"/>
+  <circle cx="55" cy="145" r="3" fill="#0076df" opacity="0.5"/>
+  <circle cx="35" cy="105" r="3" fill="#0076df" opacity="0.4"/>
+  <circle cx="55" cy="55" r="3" fill="#0076df" opacity="0.5"/>
+  <!-- Highlighted nearest neighbor cluster -->
+  <circle cx="115" cy="80" r="3.5" fill="#20c997" opacity="0.7"/>
+  <circle cx="90" cy="85" r="3.5" fill="#20c997" opacity="0.7"/>
+  <circle cx="105" cy="110" r="3.5" fill="#20c997" opacity="0.7"/>
+  <!-- Query point -->
+  <circle cx="100" cy="95" r="4" fill="#e67e22" opacity="0.8"/>
+  <!-- Subtle wave pattern across -->
+  <path d="M25,100 Q50,85 75,100 T125,100 T175,100" fill="none" stroke="#adb5bd" stroke-width="0.8" opacity="0.3"/>
+</svg>

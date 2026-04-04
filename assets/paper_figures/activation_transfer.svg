@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f8f9fa"/>
+  <defs>
+    <marker id="transfer-arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <path d="M0,0 L10,3.5 L0,7" fill="#0076df"/>
+    </marker>
+  </defs>
+  <!-- Model A - left rounded rect -->
+  <rect x="20" y="60" width="60" height="80" rx="10" fill="none" stroke="#0076df" stroke-width="2.5" opacity="0.8"/>
+  <!-- Internal layers for Model A -->
+  <line x1="30" y1="80" x2="70" y2="80" stroke="#0076df" stroke-width="1" opacity="0.3"/>
+  <line x1="30" y1="95" x2="70" y2="95" stroke="#0076df" stroke-width="1" opacity="0.3"/>
+  <line x1="30" y1="110" x2="70" y2="110" stroke="#0076df" stroke-width="1" opacity="0.3"/>
+  <line x1="30" y1="125" x2="70" y2="125" stroke="#0076df" stroke-width="1" opacity="0.3"/>
+  <!-- Highlighted activation layer A -->
+  <rect x="28" y="92" width="44" height="8" rx="2" fill="#0076df" opacity="0.25"/>
+  <!-- Model B - right rounded rect -->
+  <rect x="120" y="60" width="60" height="80" rx="10" fill="none" stroke="#6f42c1" stroke-width="2.5" opacity="0.8"/>
+  <!-- Internal layers for Model B -->
+  <line x1="130" y1="80" x2="170" y2="80" stroke="#6f42c1" stroke-width="1" opacity="0.3"/>
+  <line x1="130" y1="95" x2="170" y2="95" stroke="#6f42c1" stroke-width="1" opacity="0.3"/>
+  <line x1="130" y1="110" x2="170" y2="110" stroke="#6f42c1" stroke-width="1" opacity="0.3"/>
+  <line x1="130" y1="125" x2="170" y2="125" stroke="#6f42c1" stroke-width="1" opacity="0.3"/>
+  <!-- Highlighted activation layer B -->
+  <rect x="128" y="92" width="44" height="8" rx="2" fill="#6f42c1" opacity="0.25"/>
+  <!-- Transfer arrow -->
+  <line x1="82" y1="96" x2="118" y2="96" stroke="#0076df" stroke-width="2.5" marker-end="url(#transfer-arrow)"/>
+  <!-- Small dots along arrow suggesting data flow -->
+  <circle cx="90" cy="96" r="1.5" fill="#20c997" opacity="0.6"/>
+  <circle cx="98" cy="96" r="1.5" fill="#20c997" opacity="0.8"/>
+  <circle cx="106" cy="96" r="1.5" fill="#20c997" opacity="0.6"/>
+</svg>

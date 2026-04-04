@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <rect width="200" height="200" fill="#f8f9fa"/>
+  <defs>
+    <marker id="ah1" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#0076df"/>
+    </marker>
+    <marker id="ah2" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#6f42c1"/>
+    </marker>
+    <marker id="ah3" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#20c997"/>
+    </marker>
+    <marker id="ah4" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#e67e22"/>
+    </marker>
+    <marker id="ah5" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#868e96"/>
+    </marker>
+  </defs>
+  <!-- Center point -->
+  <circle cx="100" cy="100" r="6" fill="#0076df" opacity="0.9"/>
+  <!-- Multiple arrows radiating outward - multi-attribute vectors -->
+  <line x1="100" y1="100" x2="160" y2="60" stroke="#0076df" stroke-width="2.5" marker-end="url(#ah1)" opacity="0.8"/>
+  <line x1="100" y1="100" x2="50" y2="55" stroke="#6f42c1" stroke-width="2.5" marker-end="url(#ah2)" opacity="0.8"/>
+  <line x1="100" y1="100" x2="155" y2="145" stroke="#20c997" stroke-width="2.5" marker-end="url(#ah3)" opacity="0.8"/>
+  <line x1="100" y1="100" x2="40" y2="130" stroke="#e67e22" stroke-width="2.5" marker-end="url(#ah4)" opacity="0.7"/>
+  <line x1="100" y1="100" x2="100" y2="40" stroke="#868e96" stroke-width="2.5" marker-end="url(#ah5)" opacity="0.6"/>
+  <line x1="100" y1="100" x2="100" y2="160" stroke="#0076df" stroke-width="2" opacity="0.4" stroke-dasharray="4,3"/>
+  <!-- Curved path suggesting nonlinearity -->
+  <path d="M60,160 Q80,100 120,90 T170,50" fill="none" stroke="#6f42c1" stroke-width="1.5" opacity="0.3" stroke-dasharray="3,3"/>
+</svg>
