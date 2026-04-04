@@ -526,11 +526,11 @@
   function drawGlows() {
     for (var g = glows.length - 1; g >= 0; g--) {
       var gl = glows[g];
-      gl.life -= 0.04;
+      gl.life -= 0.08;
       if (gl.life <= 0) { glows.splice(g, 1); continue; }
 
       var grd;
-      var spread = 20;
+      var spread = 10;
       var alpha = gl.life * 0.6;
       var rgb = gl.color.match(/\d+/g);
       var c = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',';
@@ -577,8 +577,8 @@
         var dist = Math.sqrt(dx * dx + dy * dy);
         if (dist < CONNECT_DIST) {
           var alpha = 1 - dist / CONNECT_DIST;
-          ctx.strokeStyle = 'rgba(100,100,140,' + (alpha * 0.35) + ')';
-          ctx.lineWidth = 1;
+          ctx.strokeStyle = 'rgba(100,100,140,' + (alpha * 0.5) + ')';
+          ctx.lineWidth = 1.5;
           ctx.beginPath();
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
