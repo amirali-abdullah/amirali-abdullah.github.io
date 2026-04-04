@@ -10,8 +10,18 @@ Usage:
 """
 
 import os
+import ssl
 import urllib.request
 from openai import OpenAI
+
+# Handle macOS SSL certificate issue
+ssl_ctx = ssl.create_default_context()
+try:
+    import certifi
+    ssl_ctx.load_verify_locations(certifi.where())
+except ImportError:
+    ssl_ctx.check_hostname = False
+    ssl_ctx.verify_mode = ssl.CERT_NONE
 
 client = OpenAI()
 
@@ -94,7 +104,9 @@ def generate_image(name, prompt):
     )
 
     image_url = response.data[0].url
-    urllib.request.urlretrieve(image_url, output_path)
+    with urllib.request.urlopen(image_url, context=ssl_ctx) as resp:
+        with open(output_path, 'wb') as f:
+            f.write(resp.read())
     print(f"  Saved {output_path}")
 
 
