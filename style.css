@@ -430,10 +430,16 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 24px;
+  }
+
+  .hero {
+    padding: 36px 16px 24px;
   }
 
   .social-row {
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .graph-container {
@@ -464,9 +470,14 @@ h2 {
     flex-wrap: wrap;
   }
 
+  .section {
+    padding: 28px 16px 16px;
+  }
+
   .pub-card {
     flex-direction: column;
     align-items: center;
+    padding: 12px;
   }
 
   .pub-thumb {
@@ -474,5 +485,50 @@ h2 {
     max-width: 200px;
     height: auto;
     aspect-ratio: 1;
+    min-width: 0;
+  }
+
+  .pub-thumb img {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+  }
+
+  .pub-body {
+    width: 100%;
+    text-align: left;
+  }
+
+  .pub-actions {
+    justify-content: flex-start;
+  }
+
+  .pub-authors,
+  .pub-title {
+    word-break: break-word;
+  }
+
+  .news-list li {
+    padding: 10px 12px;
+    font-size: 0.88rem;
+  }
+
+  .news-date {
+    display: block;
+    margin-bottom: 2px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-text p,
+  .subtitle {
+    font-size: 0.9rem;
   }
 }
