@@ -532,3 +532,29 @@ h2 {
     font-size: 0.9rem;
   }
 }
+
+/* ===== COMIC ===== */
+.comic-strip-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.comic-strip img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  cursor: zoom-in;
+  transition: opacity 0.2s;
+}
+
+.comic-strip img:hover {
+  opacity: 0.9;
+}
+
+.comic-strip-caption {
+  margin-top: 0.5rem;
+  font-size: 0.88rem;
+  color: #666;
+  text-align: center;
+}
