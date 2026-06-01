@@ -1,14 +1,11 @@
-Add a news item to the top of the news list in index.html.
+Add a news item by running the add_news.py script.
 
-Usage: /add-news <date> <text>
+Usage: /add-news "Mon YYYY" "text"
 
-- Date format: "Mon YYYY" (e.g. "Jun 2026") or just "YYYY" for year-only items.
-- Insert as the first `<li>` inside `<ul class="news-list">`.
-- Use this exact format:
-
-```html
-      <li><span class="news-date">DATE</span> TEXT</li>
-```
-
-- If the text references a paper or section on the page, link it with an `<a href="...">` tag.
-- After inserting, confirm what was added and ask if the user wants to push.
+Steps:
+1. Parse the date and text from the arguments.
+2. Run from the repo root:
+   ```
+   python3 scripts/add_news.py "Mon YYYY" "text"
+   ```
+3. Show the output and ask whether to push.
